@@ -1,0 +1,519 @@
+{
+	"info": {
+		"_postman_id": "5c8c99ec-df22-47d0-9425-5093b47bf6fd",
+		"name": "Prueba Tecnica BANDESAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19295616"
+	},
+	"item": [
+		{
+			"name": "Readers",
+			"item": [
+				{
+					"name": "getAllReaders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMTkwNjc3NTc2LCJleHAiOjE3MzExOTM2NzcsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.fCm0QvDxwB8MSBGyDWSvXwc-yyvjJWqsmqIHFnuJhSo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/readers/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"readers",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveReader",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMjEwNzQzMDIyLCJleHAiOjE3MzEyMTM3NDMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.GF4EJOptqRT8wXHvLXquDAK1V7lRt6k8geidW-YCF4s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Carlos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/readers/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"readers",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateReader",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMTk1Mzg1NjYzLCJleHAiOjE3MzExOTgzODUsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.qJTfUNR2wqTjce74NgPmm_aD1Kv8VkYa-uyPHazZp9w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idReader\": 3,\r\n  \"name\": \"Juan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/readers/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"readers",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteReader",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMTk1Mzg1NjYzLCJleHAiOjE3MzExOTgzODUsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.qJTfUNR2wqTjce74NgPmm_aD1Kv8VkYa-uyPHazZp9w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/readers/delete/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"readers",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blogs",
+			"item": [
+				{
+					"name": "getAllBlogs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMTk5MTMyNzgxLCJleHAiOjE3MzEyMDIxMzIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.C8jY39Gh7sgAtx-VCFANvrou49B7QBNCWtoyLhnS10w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/blogs/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"blogs",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveBlog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMjEwNzQzMDIyLCJleHAiOjE3MzEyMTM3NDMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.GF4EJOptqRT8wXHvLXquDAK1V7lRt6k8geidW-YCF4s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Cocina\",\r\n    \"description\": \"Recetas unicas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/blogs/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"blogs",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateBlog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMjA0MjgwODUyLCJleHAiOjE3MzEyMDcyODAsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.D32FHEb1yj5ZTpuFyuT7Xx7cITE_tb5MO8JCVYLHz14",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idBlog\": 2,\r\n    \"title\": \"Cocina\",\r\n    \"description\": \"Recetas exclusivas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/blogs/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"blogs",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBlog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMjA0MjgwODUyLCJleHAiOjE3MzEyMDcyODAsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.D32FHEb1yj5ZTpuFyuT7Xx7cITE_tb5MO8JCVYLHz14",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/blogs/delete/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"blogs",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BlogsReaders",
+			"item": [
+				{
+					"name": "getAllBlogsReaders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMjA3ODAyNjI2LCJleHAiOjE3MzEyMTA4MDIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.w2sBpuR5ZQQXF64fVH3Y4eujHgRb27xdrlUdrizVTNc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/blogsreaders/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"blogsreaders",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveBlogReader",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMjEwNzQzMDIyLCJleHAiOjE3MzEyMTM3NDMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.GF4EJOptqRT8wXHvLXquDAK1V7lRt6k8geidW-YCF4s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idReader\": 4,\r\n    \"idBlog\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/blogsreaders/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"blogsreaders",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateBlogReader",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMjEwNzQzMDIyLCJleHAiOjE3MzEyMTM3NDMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.GF4EJOptqRT8wXHvLXquDAK1V7lRt6k8geidW-YCF4s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idBlogReader\": 2,\r\n    \"idReader\": 2,\r\n    \"idBlog\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/blogsreaders/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"blogsreaders",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBlogReader",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzMxMjEwNzQzMDIyLCJleHAiOjE3MzEyMTM3NDMsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.GF4EJOptqRT8wXHvLXquDAK1V7lRt6k8geidW-YCF4s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/blogsreaders/delete/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"blogsreaders",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "createToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"aorellana\",\n    \"password\": \"bandesal2024\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/token/generar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"token",
+								"generar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refreshToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhb3JlbGxhbmEiLCJjcmVhdGVkIjoxNzA2NTY3MzI4OTIyLCJleHAiOjE3MDY1NzAzMjgsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdfQ.eEhc_GMBiqGSefXQvZsBwLfFohexHP7H05PmP_o4eZg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/pruebabandesal/token/renovar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pruebabandesal",
+								"token",
+								"renovar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

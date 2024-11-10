@@ -2,7 +2,6 @@ package com.bandesalprueba.sv.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -28,11 +27,11 @@ public class BlogReader {
 	@Column(name = "idBlogReader")
 	private Integer idBlogReader;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne
 	@JoinColumn(name = "idReader")
 	private Reader reader;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne
 	@JoinColumn(name = "idBlog")
 	private Blog blog;
 
