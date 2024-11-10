@@ -40,7 +40,7 @@ public class ReaderServiceImpl implements ReaderService {
 			e.printStackTrace();
 
 			response.setExito(false);
-			response.setMensaje("Ocurrio un error en ReaderServiceImpl.getAll");
+			response.setMensaje("Ocurrio un error en ReaderServiceImpl.getAllReaders");
 		}
 
 		return response;
